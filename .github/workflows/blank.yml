@@ -38,8 +38,6 @@ jobs:
           java-package: jdk
           # The architecture (x86, x64) of the package.
           architecture: x64
-          # Path to where the compressed JDK is located. The path could be in your source repository or a local path on the agent.
-          jdkFile: /jdk
 
       - name: Docker Login
         # You may pin to the exact commit or the version.
