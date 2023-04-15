@@ -56,7 +56,7 @@ jobs:
           registry: registry.cn-hangzhou.aliyuncs.com
           platforms: linux/amd64
           # Image name (excluding registry). Defaults to {{$organization/$repository}}.
-          image_name: jdk
+          image_name: testopenert/jdk
           # Docker login
           login: ${{ secrets.USER }}
           # Docker password
