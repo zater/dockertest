@@ -51,6 +51,7 @@ jobs:
           file: Dockerfile
           # Organization
           organization: zater
+          repository: testopenert
           # Docker registry
           registry: registry.cn-hangzhou.aliyuncs.com
           platforms: linux/amd64
