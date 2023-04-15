@@ -10,11 +10,11 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 #                       libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python &&\
 #    apt-get clean
 
-RUN useradd -m openwrt &&\
-    echo 'openwrt ALL=NOPASSWD: ALL' > /etc/sudoers.d/openwrt
+#RUN useradd -m openwrt &&\
+#    echo 'openwrt ALL=NOPASSWD: ALL' > /etc/sudoers.d/openwrt
 
-USER openwrt
-WORKDIR /home/openwrt
+#USER openwrt
+#WORKDIR /home/openwrt
 
 #RUN git clone -b 21.02 https://github.com/Lienol/openwrt
 RUN echo 'test'
