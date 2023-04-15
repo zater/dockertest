@@ -16,5 +16,5 @@ RUN useradd -m openwrt &&\
 USER openwrt
 WORKDIR /home/openwrt
 
-RUN git clone -b dev-19.07 https://github.com/Lienol/openwrt
+RUN git clone -b 21.02 https://github.com/Lienol/openwrt
 
