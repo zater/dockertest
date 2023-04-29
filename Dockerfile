@@ -17,11 +17,10 @@ RUN apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils biso
     vim wget xmlto xxd zlib1g-dev
 RUN apt-get clean
 RUN git clone https://github.com/coolsnowwolf/lede
-RUN cd lede
-RUN ./scripts/feeds update -a
-RUN ./scripts/feeds install -a
-RUN  make download -j8
-RUN  make V=s -j1
+RUN git clone https://github.com/zater/dockertest
+RUN cp dockertest/.config lede/
+RUN cd lede;./scripts/feeds update -a;./scripts/feeds install -a; make download -j8
+#RUN  make V=s -j1
   #&&\
  #   echo -ne "
 #src-git lienol https://github.com/TinyTitanPro/lienol-openwrt-package" >> openwrt/feeds.conf.default &&\
