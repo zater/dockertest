@@ -7,7 +7,7 @@ RUN   sed -i "s@http://.*security.ubuntu.com@http://repo.huaweicloud.com@g" /etc
 RUN apt-get update
 RUN apt-get install -y sudo time git-core subversion build-essential gcc-multilib \
     build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch  python2.7 unzip zlib1g-dev  libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full libssl-dev texinfo   libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf vim screen \
-     qemu-system-arm libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python3 
+     qemu-system libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python3 
 RUN apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
        bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
     git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev \
