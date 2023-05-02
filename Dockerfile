@@ -16,7 +16,7 @@ RUN apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils biso
     libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip \
     vim wget xmlto xxd zlib1g-dev w3m
 RUN apt-get clean
-RUN git clone https://github.com/coolsnowwolf/lede
+RUN git clone -b 20221001 https://github.com/coolsnowwolf/lede
 
 RUN git clone https://github.com/zater/dockertest
 RUN cp dockertest/.config lede/
