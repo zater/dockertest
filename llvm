@@ -17,3 +17,5 @@ RUN apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils biso
     vim wget xmlto xxd zlib1g-dev w3m
 RUN apt-get clean
 RUN git clone -b llvmorg-15.0.7 https://github.com/llvm/llvm-project.git
+
+RUN mkdir -p /usr/local/tomcat/llvm-project/build;cd  /usr/local/tomcat/llvm-project/build;cmake ../llvm -DCMAKE_BUILD_TYPE=Debug;make -j
