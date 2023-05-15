@@ -18,4 +18,4 @@ RUN apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils biso
 RUN apt-get clean
 RUN git clone -b llvmorg-15.0.7 https://github.com/llvm/llvm-project.git
 RUN  cat /proc/cpuinfo
-RUN mkdir -p /usr/local/tomcat/llvm-project/build;cd  /usr/local/tomcat/llvm-project/build;cmake ../llvm -DCMAKE_BUILD_TYPE=Debug;make -j8
+RUN mkdir -p /usr/local/tomcat/llvm-project/build;cd  /usr/local/tomcat/llvm-project/build;cmake ../llvm -DCMAKE_BUILD_TYPE=Debug;make -j2
