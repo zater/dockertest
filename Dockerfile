@@ -22,7 +22,7 @@ RUN git clone https://github.com/zater/dockertest
 RUN cp dockertest/.config lede/
 RUN cd lede;./scripts/feeds update -a;./scripts/feeds install -a; 
 RUN cd lede;export FORCE_UNSAFE_CONFIGURE=1; make download -j8;
-#RUN cd lede;export FORCE_UNSAFE_CONFIGURE=1; make V=s -j99
+RUN cd lede;export FORCE_UNSAFE_CONFIGURE=1; make V=s -j1
   #&&\
  #   echo -ne "
 #src-git lienol https://github.com/TinyTitanPro/lienol-openwrt-package" >> openwrt/feeds.conf.default &&\
